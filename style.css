@@ -1,0 +1,211 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: #aeefef;
+    text-align: center;
+border: 2px solid black;
+align-items: center;
+justify-content: center;
+width:100%;
+height: 90px;
+padding: 5px;
+font-size: 29px;
+font-weight: bold;
+}.navbar ul{
+    list-style-type: none;
+}
+.gameboard{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 80px;
+    height: 380px;
+}
+.container{
+
+    display: grid;
+    width:40%;
+    height:100%;
+    grid-template-columns: repeat(3,auto);
+}
+.container div{
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+}
+.gameinformation{
+    font-size: 20px;
+margin-left: 165px;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+#but{
+    
+    border: 2px black solid;
+    border-radius: 9px;
+    padding: 3px;
+    font-size: 18px;
+    width: 73px;
+cursor: pointer;
+animation-name: but;
+animation-duration: 2s;
+
+animation-iteration-count: infinite;}
+@keyframes but {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: yellow;
+    }
+    50%{
+        background-color:red;
+    }
+    
+}
+#but:hover{
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 1px 1px 9px white;
+}
+
+br-0 {
+    border-right: 0;
+}
+bl-0 {
+    border-left: 0;
+}
+bt-0 {
+    border-top: 0;
+}
+bb-0 {
+    border-bottom: 0;
+}
+
+.container div:hover{
+background-color: silver;    
+    
+    
+    
+
+}
+/* Add these styles to your CSS file */
+.container .box {
+    border: 2px solid black;
+}
+
+.container .box.bt-0 {
+    border-top: 0;
+}
+.container .box.bb-0 {
+    border-bottom: 0;
+}
+.container .box.bl-0 {
+    border-left: 0;
+}
+.container .box.br-0 {
+    border-right: 0;
+}
+
+@media  screen and (max-width:400px) {
+
+    #winner{
+        
+        color: red;
+    }
+    .gameboard{
+       
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gameinformation{
+justify-content: flex-start;
+align-items: flex-start;
+margin: 34px;
+    } 
+.container div{
+    font-size: 22px;
+}
+#text{
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    
+}
+
+.button{
+    margin-top: 19px;
+    margin: auto;
+}
+#but{
+   
+    margin-top: 12px;
+    font-size: 18px;
+}
+#winner{
+    font-size: 24px;
+}
+}
+@media  screen and (max-width:800px) {
+
+    #winner{
+        
+        color: red;
+    }
+    .gameboard{
+       margin-top: 200px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gameinformation{
+justify-content: flex-start;
+align-items: flex-start;
+margin: 30px;
+    } 
+.container div{
+    font-size: 25px;
+}
+#text{
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    
+}
+
+.button{
+    margin-top: 19px;
+    margin: auto;
+}
+#but{
+   
+    margin-top: 12px;
+    font-size: 20px;
+}
+#winner{
+    font-size: 30px;
+}
+}
